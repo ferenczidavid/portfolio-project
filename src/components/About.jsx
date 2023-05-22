@@ -1,4 +1,5 @@
 import React from 'react'
+import stockPhoto from '../assets/about_stock.png'
 
 const About = () => {
   return (
@@ -22,7 +23,7 @@ const About = () => {
                 </div>
             </div>
             <div className='p-10'>
-                <img src="src\assets\about_stock.png" alt="stock_photo" className='rounded-2xl mx-auto w-2/3 md:w-full'/>
+                <img src={stockPhoto} alt="stock_photo" className='rounded-2xl mx-auto w-2/3 md:w-full'/>
             </div>
         </div>
       </div>
