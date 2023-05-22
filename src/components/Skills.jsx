@@ -12,37 +12,37 @@ const Skills = () => {
       id:1,
       src: html,
       title:'HTML',
-      style:'shadow-orange-500'
+      style:'shadow-white hover:shadow-orange-500'
     },
     {
       id:2,
       src:css,
       title:'CSS',
-      style:'shadow-blue-500'
+      style:'shadow-white hover:shadow-blue-500'
     },
     {
       id:3,
       src:javascript,
       title:'Javascript',
-      style:'shadow-yellow-500'
+      style:'shadow-white hover:shadow-yellow-500'
     },
     {
       id:4,
       src:tailwind,
       title:'Tailwind',
-      style:'shadow-sky-400'
+      style:'shadow-white hover:shadow-sky-400'
     },
     {
       id:5,
       src:react,
       title:'React',
-      style:'shadow-blue-600'
+      style:'shadow-white hover:shadow-blue-600'
     },
     {
       id:6,
       src:github,
       title:'Github',
-      style:'shadow-gray-500'
+      style:'shadow-white hover:shadow-gray-500'
     },
   ]
 
