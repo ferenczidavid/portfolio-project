@@ -77,13 +77,24 @@ const Navbar = () => {
         </div>
 
         {/* Mobile menu */}
-        <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-[#2b2b2b] flex flex-col justify-center items-center'}>
-                <li className='py-6 text-4xl'>Home</li>
-                <li className='py-6 text-4xl'>About</li>
-                <li className='py-6 text-4xl'>Skills</li>
-                <li className='py-6 text-4xl'>Projects</li>
-                <li className='py-6 text-4xl'>Contact</li>
-            </ul>
+        {nav && (
+        <ul className={'absolute top-0 left-0 w-full h-screen bg-gradient-to-t from-gray-700 via-gray-900 to-black flex flex-col justify-center items-center'}>
+            {
+                links.map(({id,link}) => (
+                    <li key={id} className='capitalize hover:scale-110 transition ease-in-out duration-300 active:scale-90 px-4 py-6 text-4xl'>
+                        <Link 
+                            to={link} 
+                            smooth 
+                            duration={500}
+                            onClick={() => setNav(!nav)}
+                        >
+                                {link}
+                        </Link>
+                    </li>
+                ))
+            }
+        </ul>)}
+        
 
         {/* Social icons */}
         <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
