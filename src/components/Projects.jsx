@@ -24,9 +24,13 @@ const Projects = () => {
             <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0'>
               <div className='shadow-md shadow-white rounded-lg'>
                 <img key={id} src={src} alt="" className='rounded-md duration-200 hover:scale-105'/>
-                <div className='flex items-center justify-center'>
-                  <button className='bg-slate-800 border border-gray-500 rounded-lg w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'>&lt;Code/&gt;</button>
-                  <button className='bg-slate-800 border border-gray-500 rounded-lg w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'>&lt;Demo/&gt;</button>
+                <div className='flex items-center justify-center space-x-4'>
+                  <a href="https://github.com/ferenczidavid/tictactoe" target='_blank' rel='noopener noreferrer' >
+                    <button className='bg-slate-800 border border-gray-500 rounded-lg w-28 px-4 py-3 m-2 duration-200 hover:scale-105'>&lt;Code/&gt;</button>
+                  </a>
+                  <a href="https://jazzy-griffin-17f300.netlify.app" target='_blank' rel='noopener noreferrer' >
+                    <button className='bg-slate-800 border border-gray-500 rounded-lg w-28 px-4 py-3 m-2 duration-200 hover:scale-105'>&lt;Demo/&gt;</button>
+                  </a>
                 </div>
               </div>
             </div>
