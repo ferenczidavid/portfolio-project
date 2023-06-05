@@ -2,6 +2,7 @@ import React from 'react'
 import { HiArrowNarrowRight } from 'react-icons/hi'
 import {Link} from 'react-scroll'
 import profilePic from '../assets/profile_pic.png'
+import profilePic2 from '../assets/profile_pic2.jpg'
 
 const Home = () => {
   return (
@@ -33,7 +34,7 @@ const Home = () => {
             </div>
         </div>
         <div>
-            <img src={profilePic} alt="my picture" className='rounded-2xl mx-auto w-2/3 md:w-full' />
+            <img src={profilePic} alt="my picture" className='rounded-2xl mx-auto w-2/3 md:w-4/5 place-self-end' />
         </div>
       </div>  
     </div>

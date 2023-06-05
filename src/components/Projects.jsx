@@ -1,6 +1,7 @@
 import React from 'react'
 import tictactoe from '../assets/tictactoe.png'
 import cloudmanagement from '../assets/cloudmanagement.png'
+import budgetcalculator from '../assets/budget_calculator.png'
 
 const Projects = () => {
 
@@ -16,6 +17,12 @@ const Projects = () => {
       src: cloudmanagement,
       hrefGit: "https://github.com/ferenczidavid/data_services",
       hrefDemo: "https://cmcloudmanagement.netlify.app"
+    },
+    {
+      id:3,
+      src: budgetcalculator,
+      hrefGit: "https://github.com/ferenczidavid/budget_calculator",
+      hrefDemo: "https://ferenczidavidbudgetcalculator.netlify.app"
     } 
   ]
 
