@@ -10,20 +10,24 @@ const Projects = () => {
       id:1,
       src: tictactoe,
       hrefGit: "https://github.com/ferenczidavid/tictactoe",
-      hrefDemo: "https://ferenczidavidtictactoe.netlify.app"
+      hrefDemo: "https://ferenczidavidtictactoe.netlify.app",
+      title:"Tic-Tac-Toe"
     },
     {
       id:2,
       src: cloudmanagement,
       hrefGit: "https://github.com/ferenczidavid/data_services",
-      hrefDemo: "https://cmcloudmanagement.netlify.app"
+      hrefDemo: "https://cmcloudmanagement.netlify.app",
+      title:"Cloud Management Website"
     },
     {
       id:3,
       src: budgetcalculator,
       hrefGit: "https://github.com/ferenczidavid/budget_calculator",
-      hrefDemo: "https://ferenczidavidbudgetcalculator.netlify.app"
-    } 
+      hrefDemo: "https://ferenczidavidbudgetcalculator.netlify.app",
+      title:"Budget Calculator"
+    },
+     
   ]
 
   return (
@@ -37,8 +41,9 @@ const Projects = () => {
 
         <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0'>
           {
-            projects.map(({id,src,hrefGit,hrefDemo}) => (
+            projects.map(({id,src,hrefGit,hrefDemo,title}) => (
               
+              <div>
                 <div className='shadow-md shadow-white rounded-lg'>
                   <img key={id} src={src} alt="" className='rounded-md duration-200 hover:scale-105'/>
                   <div className='flex items-center justify-center space-x-4'>
@@ -50,7 +55,11 @@ const Projects = () => {
                     </a>
                   </div>
                 </div>
-              
+                <div className='flex justify-center items-center pt-2 font-bold'>
+                  <p>{title}</p>
+                </div>
+              </div>
+                
             ))
           }
         </div>
